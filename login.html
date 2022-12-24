@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión - AluraGeek</title>
+<!-- Favicon -->
+<link rel="shortcut icon" href="./assets/img/joystick.svg" type="image/png" />
+<!-- Configuración para el SEO -->
+<meta name="title" content="Iniciar sesión - AluraGeek"/>
+<meta name="description" content="Un buen lugar para adquirir todo lo que deseas en un mismo lugar con los mejores precios"/>
+<meta name="images" content="./assets/img/joystick.svg"/>
+<meta name="images" content="./assets/img/logo.svg"/>
+<meta name="theme-color" content="#2A7AE4"/>
+<meta name="language" content="Spanish"/>
+<meta name="revisit-after" content="3 days"/>
+<meta name="author" content="Nicolaasp40"/>
+<!-- Google Fonts: Raleway -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
+<!-- Style of site -->
+<link rel="stylesheet" href="./assets/css/base.css">
+<link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+	
+	<main>
+
+		<header>
+			<div class="container">
+				<div class="header__content">
+					<div class="header__logo">
+						<a href="./" class="header__logo--link d--flex jc--center ai--center">
+							<img src="./assets/img/logo.svg" alt="Logo del sitio AluraGeek" title="AluraGeek">
+						</a>
+					</div>
+					<a href="login.html" class="button button--outline button--login">Login</a>
+					<form method="POST" name="search__product" class="header__search p--relative">
+						<input class="header__search--input" type="text" name="search" placeholder="¿Que deseas buscar?">
+						<span class="header__search--button"><iconify-icon icon="fluent:search-32-filled"></iconify-icon></span>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<section class="section__login d--flex jc--center ai--center">
+			<form method="POST" class="login__box" name="login">
+				<fieldset class="d--flex jc--start ai--center flex--column gap--4">
+					<legend class="form__legend fw--700">Iniciar sesion</legend>
+					<div class="form__input--group">
+						<label for="email" class="form__input--label">Escriba su correo</label>
+						<input type="email" name="email" id="email" class="form__input--input" data-tipo="email" required>
+						<span class="form__input--error"></span>
+					</div>
+					<div class="form__input--group">
+						<label for="password" class="form__input--label">Escriba su contraseña</label>
+						<input type="password" name="password" id="password" class="form__input--input" data-tipo="password" title="minimo 6 caracteres" minlength="6" maxlength="20" pattern="^(?=.*[a-zA-Z0-9!@#$%^&*_=+-]).{6,20}$" required>
+						<span class="form__input--error"></span>
+					</div>
+				</fieldset>
+				<button type="submit" class="button button--fill button--padding">Entra</span>
+			</form>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="footer__grid d--grid gap--3">
+					<a href="./" class="footer__grid--logo d--block">
+						<img src="./assets/img/logo.svg" alt="logo del sitio">
+					</a>
+					<div class="footer__grid--links d--flex flex--column gap--3">
+						<a href="#" class="footer__link">Quienes somos</a>
+						<a href="#" class="footer__link">Políticas de privacidad</a>
+						<a href="#" class="footer__link">Programa de fidelidad</a>
+						<a href="#" class="footer__link">Nuestras tiendas</a>
+						<a href="#" class="footer__link">Quiero ser franquiciado</a>
+						<a href="#" class="footer__link">Anúncie aquí</a>
+					</div>
+					<div class="footer__grid--form">
+						<!-- 
+							# EMAIL FAKE: https://temp-mail.org/es/
+						-->
+						<form method="POST" action="https://formsubmit.co/kipek41852@dicopto.com" name="formulario">
+							<fieldset>
+								<legend class="form__legend fw--700">Hable con nosotros</legend>
+								<div class="form__input--group">
+									<label for="name" class="form__input--label">Nombre</label>
+									<input type="text" name="name" id="name" class="form__input--input" data-tipo="nombre" required>
+									<span class="form__input--error"></span>
+								</div>
+								<div class="form__input--group">
+									<label for="message" class="form__input--label">Mensaje</label>
+									<textarea name="message" class="form__input--input" data-tipo="mensaje"></textarea required>
+									<span class="form__input--error"></span>
+								</div>
+							</fieldset>
+							<button type="submit" class="button button--fill button--padding">Enviar mensaje</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="copyright">
+			<p class="copyright__text">Desarrollado por <strong class="fw--700">Nicolás Peralta</strong> 2022</p>
+		</div>
+	</main>
+
+	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+	<script type="module" src="./assets/js/Login/app.js" async defer></script>
+</body>
+</html>
